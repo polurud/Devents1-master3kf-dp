@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "78471954810",
+    "firebase_url": "https://devents-b2491.firebaseio.com",
+    "project_id": "devents-b2491",
+    "storage_bucket": "devents-b2491.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78471954810:android:7865bcab94d7e4b6",
+        "android_client_info": {
+          "package_name": "com.dartmouth.kd.devents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78471954810-n55n5kneom58vcve4668hvjmbaubmu0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO3N507bP7tU2USx_G5hKdiyfqG3zOGuE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

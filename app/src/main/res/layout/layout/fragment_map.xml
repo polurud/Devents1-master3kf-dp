@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.dartmouth.kd.devents.MapFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/devent_logo"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:src="@mipmap/devents" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="DEvents Map"
+        android:textColor = "@color/Dartmouth"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:fontFamily="casual"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="What's going on around campus? Welcome to the DEvents Map where you can see upcoming DEvents
+        on a map of campus. You can click on event banners for more details about the event. Click below to begin!"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:fontFamily="casual"/>
+
+
+    <Button
+        android:id="@+id/startMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Launch Map"
+        android:fontFamily="casual"/>
+
+
+</LinearLayout>

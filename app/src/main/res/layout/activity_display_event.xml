@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="EVENT DETAILS"
+            android:textColor = "@color/Dartmouth"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Event Title" />
+
+        <EditText
+            android:id="@+id/editDispTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable="false"
+            android:layout_margin="5dp"
+            >
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Date" />
+
+        <EditText
+            android:id="@+id/editDispDate"
+            android:layout_width="match_parent"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:layout_margin="5dp"
+            >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Start" />
+
+        <EditText
+            android:id="@+id/editDispStart"
+            android:layout_width="match_parent"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:text="End" />
+
+        <EditText
+            android:id="@+id/editDispEnd"
+            android:layout_width="match_parent"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:editable = "false"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Location"/>
+
+        <EditText
+            android:id="@+id/editDispLocation"
+            android:layout_width="match_parent"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:text="Description"/>
+
+        <EditText
+            android:id="@+id/editDispDescription"
+            android:fontFamily="casual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="URL"/>
+
+        <EditText
+            android:id="@+id/editDispUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="AUDIENCE FILTERS"
+            android:textColor = "@color/Dartmouth"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Will there be food?"/>
+
+        <EditText
+            android:id="@+id/editDispFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Event Type"/>
+
+        <EditText
+            android:id="@+id/editDispEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Program Type"/>
+
+        <EditText
+            android:id="@+id/editDispProgramType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Years Welcome"/>
+
+        <EditText
+            android:id="@+id/editDispYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Majors Welcome"/>
+
+        <EditText
+            android:id="@+id/editDispMajor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Greek Societies Welcome"/>
+
+        <EditText
+            android:id="@+id/editDispGreekSociety"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Genders Welcome"/>
+
+        <EditText
+            android:id="@+id/editDispGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:editable = "false"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/btnSavetoMyDEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onSavetoMyDEvents"
+            android:fontFamily="casual"
+            android:text="Save to My DEvents" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onBackClicked"
+            android:fontFamily="casual"
+            android:text="Back" >
+        </Button>
+
+    </LinearLayout>
+</ScrollView>

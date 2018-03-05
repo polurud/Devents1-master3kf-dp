@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+tools:context="com.dartmouth.kd.devents.CreateFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/devent_logo"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:src="@mipmap/devents" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Create a DEvent"
+        android:textColor = "@color/Dartmouth"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:fontFamily="casual"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Are you involved in something cool going on on campus? Do you want your fellow
+        students to be in the know? Here you can create a new DEvent that will be availble on our Calendar and
+        Map. Click below to begin!"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:fontFamily="casual"/>
+
+<Button
+    android:id="@+id/startCreate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:text="Launch Event Creater"
+    android:fontFamily="casual"/>
+
+
+</LinearLayout>

@@ -1,0 +1,299 @@
+<resources>
+
+    <string name="user_profile_preference">Name, Email, Class, etc</string>
+    <string name="summary_user_profile">User Profile</string>
+
+    <string name="account_preferences">Account Preferences</string>
+    <string name="dialog_based_preferences">Dialog-based preferences</string>
+    <string name="privacy_checkbox_preference">Privacy Setting</string>
+    <string name="summary_privacy_preference">Posting your records anonymously</string>
+    <string name="unit_preference">Unit Preference</string>
+    <string name="summary_unit_preference">Select the units</string>
+    <string name="comments_preference">Comments</string>
+    <string name="summary_comments_preference">Please enter your comments</string>
+    <string name="webpage_intent_preference">Webpage</string>
+    <string name="summary_webpage_intent_preference">http://web.cs.dartmouth.edu/</string>
+
+
+    <string name="app_name">DEvents</string>
+    <string name="devent_logo">DEvent logo</string>
+
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="sign_up_button_label">Sign Up</string>
+    <string name="signup_error_message">Please make sure you enter an email address and password!</string>
+    <string name="signup_error_title">Error!</string>
+    <string name="signup_success">Account successfully created! You can now Login.</string>
+    <string name="login_error_message">Please make sure you enter an email address and password!</string>
+    <string name="login_error_title">Error!</string>
+    <string name="login_button_label">Login</string>
+    <string name="sign_up_text">Sign Up!</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="add_item">Add New Item</string>
+    <string name="action_logout">Logout</string>
+    <string name="ui_buttonsave">Save</string>
+    <string name="ui_buttoncancel">Cancel</string>
+
+    <string name="Select_Program">Select current program</string>
+
+    <string name="Select_Year">Select year</string>
+    <string name="Select_Major">Select Major</string>
+    <string name="userclass">userclass</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="user_name1">user_name1</string>
+    <string name="change">Change</string>
+    <string name="user_profile_picture">user profile picture</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="enter_user_name">enter_user_name</string>
+    <string name="enter_user_email">enter_user_email</string>
+    <string name="user_phone">user_phone</string>
+    <string name="gender">gender</string>
+    <string name="enter_phone_number">enter_phone_number</string>
+    <string name="enter_class_year_e_g_2017">enter_class_year_e_g_2017</string>
+    <string name="enter_major">enter_major</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="major">major</string>
+    <string name="user_name">User Name</string>
+    <string name="user_email">User Email</string>
+    <string name="user_phone1">User Phone</string>
+    <string name="Gender">Gender</string>
+    <string name="User_class">Class year</string>
+    <string name="enter_major1">Major</string>
+    <string name="enter_user_name1">Enter user name</string>
+    <string name="enter_user_email1">Enter user email</string>
+    <string name="female1">Female</string>
+    <string name="enter_your_class_year_e_g_2017">Enter class year e.g.2017</string>
+    <string name="ui_profile_pic_Gallerychoose">Choose profile picture</string>
+    <string name="preference_name">user_preference</string>
+    <string name="profile_photo_file_name">profile_photo.png</string>
+    <string name="ui_profile_name">profile_name</string>
+    <string name="ui_profile_email">profile_email</string>
+    <string name="action_settings">Settings</string>
+    <string name="ui_profile_phone">profile_phone</string>
+    <string name="ui_profile_gender">profile_gender</string>
+    <string name="ui_profile_class">profile_class</string>
+    <string name="ui_profile_major">profile_major</string>
+    <string name="ui_settings_category">Account Preference</string>
+    <string name="ui_settings_profile">User Profile</string>
+    <string name="male1">Male</string>
+    <string name="enter_phone_number1">Enter phone number</string>
+    <string-array name="ui_profile_photo_selection">
+        <item>Click image</item>
+        <item>Select from Gallery</item>
+    </string-array>
+    <string name="ui_profile_toast_save_text">Saved</string>
+
+    <string-array name="ui_manual_input_items">
+        <item>Title</item>
+        <item>Date</item>
+        <item>Start</item>
+        <item>End</item>
+        <item>Location</item>
+        <item>Description</item>
+        <item>URL</item>
+    </string-array>
+
+    <string name="Select_GreekSociety">Select Greek Society</string>
+    <string-array name="Greek">
+        <item>N/A</item>
+        <item>Alpha Chi Alpha</item>
+        <item>Alpha Kappa Alpha Sorority</item>
+        <item>Alpha Phi</item>
+
+        <item>Alpha Phi Alpha, Fraternity</item>
+        <item>Alpha Pi Omega, Sorority</item>
+        <item>Alpha Theta</item>
+
+        <item>Alpha Xi Delta</item>
+        <item>Beta Alpha Omega</item>
+        <item>Bones Gate</item>
+
+        <item>Chi Delta</item>
+        <item>Chi Gamma Epsilon</item>
+        <item>Chi Heorot</item>
+
+        <item>Epsilon Kappa Theta</item>
+        <item>Gamma Delta Chi</item>
+        <item>Kappa Delta</item>
+
+        <item>Kappa Delta Epsilon</item>
+        <item>Kappa Kappa Gamma</item>
+        <item>Kappa Kappa Kappa</item>
+
+        <item>Lambda Upsilon Lambda</item>
+        <item>Phi Delta Alpha</item>
+        <item>Phi Tau</item>
+
+        <item>Psi Upsilon</item>
+        <item>Sigma Delta</item>
+        <item>Sigma Nu</item>
+
+        <item>Sigma Phi Epsilon</item>
+        <item>The Tabard</item>
+        <item>Theta Delta Chi</item>
+
+        <item>Zeta Psi</item>
+
+    </string-array>
+
+
+    <string-array name="e_majors">
+        <item>ALL</item>
+        <item>Arts</item>
+        <item>Humanities</item>
+        <item>Science, Technology and Math</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="Major">
+        <item>Arts</item>
+        <item>Humanities</item>
+        <item>Science, Technology and Math</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="program">
+        <item>Undergraduate</item>
+        <item>Graduate Masters</item>
+        <item>Graduate PhD</item>
+        <item>Faculty</item>
+    </string-array>
+
+    <string-array name="e_program">
+        <item>ALL</item>
+        <item>Undergraduate</item>
+        <item>Graduate Masters</item>
+        <item>Graduate PhD</item>
+        <item>Faculty</item>
+    </string-array>
+
+
+    <string-array name="class_year">
+        <item>N/A</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+    <string-array name="e_class_year">
+        <item>ALL</item>
+        <item>N/A</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+    <string-array name="e_food">
+        <item>ALL</item>
+        <item>No</item>
+        <item>YES!</item>
+    </string-array>
+
+    <string-array name="food">
+        <item>No</item>
+        <item>YES!</item>
+    </string-array>
+
+
+    <string-array name="e_greek">
+        <item>ALL</item>
+        <item>N/A</item>
+        <item>Alpha Chi Alpha</item>
+        <item>Alpha Kappa Alpha Sorority</item>
+        <item>Alpha Phi</item>
+
+        <item>Alpha Phi Alpha, Fraternity</item>
+        <item>Alpha Pi Omega, Sorority</item>
+        <item>Alpha Theta</item>
+
+        <item>Alpha Xi Delta</item>
+        <item>Beta Alpha Omega</item>
+        <item>Bones Gate</item>
+
+        <item>Chi Delta</item>
+        <item>Chi Gamma Epsilon</item>
+        <item>Chi Heorot</item>
+
+        <item>Epsilon Kappa Theta</item>
+        <item>Gamma Delta Chi</item>
+        <item>Kappa Delta</item>
+
+        <item>Kappa Delta Epsilon</item>
+        <item>Kappa Kappa Gamma</item>
+        <item>Kappa Kappa Kappa</item>
+
+        <item>Lambda Upsilon Lambda</item>
+        <item>Phi Delta Alpha</item>
+        <item>Phi Tau</item>
+
+        <item>Psi Upsilon</item>
+        <item>Sigma Delta</item>
+        <item>Sigma Nu</item>
+
+        <item>Sigma Phi Epsilon</item>
+        <item>The Tabard</item>
+        <item>Theta Delta Chi</item>
+
+        <item>Zeta Psi</item>
+
+    </string-array>
+
+
+    <string-array name="e_gender">
+        <item>ALL</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string-array name="event_types">
+        <item>ALL</item>
+        <item>Cultural Events</item>
+        <item>Sports</item>
+        <item>Workshops</item>
+        <item>Guest Speakers</item>
+        <item>Greek</item>
+    </string-array>
+
+    <string-array name="event_types1">
+        <item>Cultural Events</item>
+        <item>Sports</item>
+        <item>Workshops</item>
+        <item>Guest Speakers</item>
+        <item>Greek</item>
+    </string-array>
+
+    <string name="ui_manual_input_location_hint">ex. Kemmeny 001</string>
+    <string name="ui_manual_input_location">Location</string>
+    <string name="ui_manual_input_title_hint">ex. Dartmouth Formula Racing Club Meeting</string>
+    <string name="ui_manual_input_title">Event Title</string>
+    <string name="ui_manual_input_description_hint">ex. Join us for our weekly meeting featuring free tuk tuk...</string>
+    <string name="ui_manual_input_description">Event Description</string>
+    <string name="ui_manual_input_url_hint">ex. https://news.dartmouth.edu/events/event?event=49881#.WpTOOxPwbGI</string>
+    <string name="ui_manual_input_url">Event URL</string>
+    <string name="ui_button_ok">Ok</string>
+    <string name="ui_button_save">Save</string>
+    <string name="ui_button_cancel">Cancel</string>
+
+    <string name="dialog_fragment_tag_general">general_dialog_fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="create_event_audience_preferences">
+        <item>Food</item>
+        <item>Event Type</item>
+        <item>Program Type</item>
+        <item>Year</item>
+        <item>Major</item>
+        <item>Greek Society</item>
+        <item>Gender</item>
+    </string-array>
+</resources>
