@@ -102,8 +102,6 @@ public class MainActivity extends AppCompatActivity  {
                 new InsertIntoDbTask().execute(event);
                 //eventlist.add(event);
             }
-                //Log.d("Data.....", String.valueOf(eventlist.size()));
-                //Log.d("Data.....First Value", String.valueOf(eventlist.get(0)));
             }
             @Override
             public void onCancelled(DatabaseError databaseError) {

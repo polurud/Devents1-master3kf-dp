@@ -154,6 +154,12 @@ public class Load_Urlevents extends AsyncTask<Void, Void, ArrayList<String>> {
     @Override
     protected void onPostExecute(ArrayList<String> result) {
 
+        CampusEventDbHelper campusdb = new CampusEventDbHelper(mcontext);
+        campusdb.deleteAllEvents();
+        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference("masterSheet");
+        rootRef.removeValue();
+
+
         Log.d("insidePost", "onPostExecute: ");
         for (String temp_result : result) {
             String str = temp_result;
@@ -176,11 +182,10 @@ public class Load_Urlevents extends AsyncTask<Void, Void, ArrayList<String>> {
 
 //                campus_Eventdata.add(campus_event);
 
-            CampusEventDbHelper campusdb = new CampusEventDbHelper(mcontext);
+
+
             long id = campusdb.insertEntry(campus_event);
             Log.d("inserttinDB1", "inserttinDB1");
-
-            DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference("masterSheet");
             //String key = mDatabase.push().getKey();
             String idString = String.valueOf(id);
             rootRef.child(idString).setValue(campus_event);
