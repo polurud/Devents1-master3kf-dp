@@ -4,11 +4,9 @@
     <modules>
       <module fileurl="file://C:\Users\HP\Desktop\Devents1-master2-kf\Devents1-master.iml" filepath="C:\Users\HP\Desktop\Devents1-master2-kf\Devents1-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/Devents1-master2-kf.iml" filepath="$PROJECT_DIR$/Devents1-master2-kf.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Devents1-master2-kf-dp-v2-master.iml" filepath="$PROJECT_DIR$/Devents1-master2-kf-dp-v2-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Devents1-master3kf.iml" filepath="$PROJECT_DIR$/Devents1-master3kf.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\HP\Desktop\Devents1-master2-kf\app\app.iml" filepath="C:\Users\HP\Desktop\Devents1-master2-kf\app\app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jsoup-1.11.2/jsoup-1.11.2.iml" filepath="$PROJECT_DIR$/jsoup-1.11.2/jsoup-1.11.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/jsoup-1.11.2/jsoup-1.11.2.iml" filepath="$PROJECT_DIR$/jsoup-1.11.2/jsoup-1.11.2.iml" />
     </modules>
   </component>

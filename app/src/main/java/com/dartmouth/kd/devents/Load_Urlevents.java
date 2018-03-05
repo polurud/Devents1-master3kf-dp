@@ -180,10 +180,6 @@ public class Load_Urlevents extends AsyncTask<Void, Void, ArrayList<String>> {
             double longi = -72.288745;
             campus_event.setLatitude(longi);
 
-//                campus_Eventdata.add(campus_event);
-
-
-
             long id = campusdb.insertEntry(campus_event);
             Log.d("inserttinDB1", "inserttinDB1");
             //String key = mDatabase.push().getKey();
