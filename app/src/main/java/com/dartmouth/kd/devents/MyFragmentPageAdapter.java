@@ -44,6 +44,8 @@ public class MyFragmentPageAdapter extends FragmentPagerAdapter {
             return "Calendar";
         else if(position == 3)
             return "Map";
+        else if(position == 4)
+            return "MyDevent";
         else
             return null;
     }

@@ -14,6 +14,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
@@ -60,6 +66,7 @@ public class MyDevents extends ListFragment implements LoaderManager.LoaderCallb
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRetainInstance(true);
 
         mContext = getActivity();
 
@@ -79,7 +86,9 @@ public class MyDevents extends ListFragment implements LoaderManager.LoaderCallb
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_my_devents, container, false);
+
+       return inflater.inflate(R.layout.fragment_my_devents, container, false);
+
     }
 
     @Override
@@ -225,8 +234,8 @@ public class MyDevents extends ListFragment implements LoaderManager.LoaderCallb
 
     public static class InsertIntoDbTask extends AsyncTask<CampusEvent, Void, String> {
         @Override
-        protected String doInBackground(CampusEvent... campusevents) {
-            long id = mCampusEventDbHelper.insertEntry(campusevents[0]);
+        protected String doInBackground(CampusEvent... campusEvents) {
+            long id = mCampusEventDbHelper.insertEntry(campusEvents[0]);
 
             return ""+id;
             // Pop up a toast

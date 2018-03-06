@@ -9,6 +9,16 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Map;
+
 
 // Display a campus event
 public class DisplayEventActivity extends Activity {
@@ -19,6 +29,7 @@ public class DisplayEventActivity extends Activity {
 
     private long mEventId;
     private CampusEvent newEvent = new CampusEvent();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,12 +74,55 @@ public class DisplayEventActivity extends Activity {
     // "Save to MyDEvents" button is clicked
     public void onSavetoMyDEvents(View v) {
 
-        new MyDevents.InsertIntoDbTask().execute(newEvent);
 
 
-        //Log.d(Globals.TAGG, "Saving to my devents ");
+        FirebaseAuth mFirebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
+        DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
 
-        finish();
+
+        String mUserId = mFirebaseUser.getUid();
+        rootRef.child("users").child(mUserId).child("events")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        //eventlist = new ArrayList<>();
+                        for (DataSnapshot eventSnapshot : dataSnapshot.getChildren()) {
+                            Map<String,Object> singleRun =  (Map<String, Object>) eventSnapshot.getValue();
+
+                            CampusEvent event = new CampusEvent();
+                            event.setTitle(singleRun.get("title").toString());
+                            event.setLocation(singleRun.get("location").toString());
+                            event.setDate(0, 0, 0);
+                            event.setEnd(singleRun.get("mEnd").toString());
+                            event.setStart(singleRun.get("mStart").toString());
+                            //event.setmDate(singleRun.get("Date").toString());
+                            //event.setEnd(singleRun.get("End").toString());
+                            //event.setStart(singleRun.get("Start").toString());
+                            event.setURL(singleRun.get("url").toString());
+                            event.setDescription(singleRun.get("description").toString());
+                            double lat = 43.7022;
+                            double longi = 72.2896;
+                            event.setLongitude(longi);
+                            event.setLatitude(lat);
+                            event.setGreekSociety(0);
+                            event.setMajor(0);
+                            event.setGender(0);
+                            event.setYear(0);
+                            event.setProgramType(0);
+                            event.setEventType(0);
+                            event.setFood(2);
+
+
+                            new MyDevents.InsertIntoDbTask().execute(event);
+
+
+                        }
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                    }
+                });
     }
 
     /*
@@ -243,6 +297,9 @@ public class DisplayEventActivity extends Activity {
             }
             return "ALL";
         }
+
+
+
 
     }
 
