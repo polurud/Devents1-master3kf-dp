@@ -14,6 +14,7 @@ public class FunctionActivity extends AppCompatActivity {
     ViewPager viewPager;
 
     //need this for the tabs
+     MyDevents myDevents;
     TabLayout tabLayout;
     MapFragment fragmentMap;
     CalendarActivity fragmentCal;
@@ -40,12 +41,14 @@ public class FunctionActivity extends AppCompatActivity {
         fragmentCal = new CalendarActivity();
         fragmentCreate = new CreateFragment();
         fragmentSettings = new SettingsFragment();
+        myDevents = new MyDevents();
 
         fragments = new ArrayList<>();
         fragments.add(fragmentSettings);
         fragments.add(fragmentCreate);
         fragments.add(fragmentCal);
         fragments.add(fragmentMap);
+        fragments.add(myDevents);
 
 
         myFragmentPagerAdapter = new MyFragmentPageAdapter(getFragmentManager(), fragments);

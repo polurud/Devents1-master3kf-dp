@@ -1,6 +1,7 @@
 package com.dartmouth.kd.devents;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +18,7 @@ public class DisplayEventActivity extends Activity {
     private static final int MENU_ID_UPDATE = 1;
 
     private long mEventId;
+    private CampusEvent newEvent = new CampusEvent();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,14 +53,21 @@ public class DisplayEventActivity extends Activity {
             ((EditText) findViewById(R.id.editDispGreekSociety)).setText(getGreekString(gs));
             int gender = extras.getInt(Globals.KEY_GENDER);
             ((EditText) findViewById(R.id.editDispGender)).setText(getGenderString(gender));
+
+
         }
+
+
     }
 
     // "Save to MyDEvents" button is clicked
     public void onSavetoMyDEvents(View v) {
-        //new InsertIntoDbTask().execute(newEvent);
+
+        new MyDevents.InsertIntoDbTask().execute(newEvent);
+
+
         //Log.d(Globals.TAGG, "Saving to my devents ");
-        Toast.makeText(this, "Saved to My DEvents", Toast.LENGTH_SHORT).show();
+
         finish();
     }
 
@@ -235,6 +244,12 @@ public class DisplayEventActivity extends Activity {
             return "ALL";
         }
 
+    }
 
-}
+
+
+
+
+
+
 

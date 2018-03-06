@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity  {
         checkPermissions();
         //hi
         mcontext = this;
+
         mEventDbHelper = new CampusEventDbHelper(mcontext);
         mEventDbHelper.deleteAllEvents();
         mFilterDbHelper = new FilterDbHelper(mcontext);
